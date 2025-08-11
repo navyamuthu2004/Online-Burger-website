@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="burger.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Iconns">
+</head>
+   
+    <title>a to z burger shop</title>
+    <body>
+     
+        <div class="landing">
+            <div class="logo">A2Z burger shop</div>
+          
+            </div>
+            <nav>  
+        <div class="nav">
+           
+        <div class="menu-bars">
+           <div class="button1"style="color:aliceblue">
+          <ul>
+            <li> <a class="active" href="#">Home</a></li> 
+            <li> <a href="#" >service</a></li>
+           <li  >  <a href="#">Menue</a> </li>
+           <li>  <a href="#">Chefies</a></li>
+            <li> <a  href="#">Contact</a>  </li>
+         </ul>
+        </div>
+    
+</div>
+</div>
+        </nav>
+<div class="container">
+    <h1>order you food at your doorstep</h1>
+    <p class="text-1">
+        The search is over, we've found all the great places to get burgers.
+        And for those thinking that burgers are always going to be beef or chicken,
+        we have news for you: these burger joints have delicious vegetarian options 
+        too and you're going to absolutely love everything they have to offer. For 
+        those who've been here already,you know just how amazing they are. And for
+        those who haven't, this is your chance to truly experience burgers at their best in namma Chennai.</p>
+<div class="container2">
+<h1>available burgers </h1>
+<div class="row">
+    <div class="column">
+        <img class="burger-1"src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/11/02075911/DoubleRoti-f.jpg?fm=webp&w=250&h=250&dpr=2" alt="chees" width="150px">
+        <figcaption class="name-1"  >chees burger</figcaption>
+    </div>
+    <div class="column">
+        <img class="burger-2"src="https://www.sugarsaltmagic.com/wp-content/uploads/2022/09/Crispy-Chicken-Burgers-11-1365x2048.jpg" alt="chicken" width="150px">
+<figcaption class="name-1"  >chicken burger</figcaption>
+        </div>
+        <div class="row">
+        <img class="burger-3" src="https://simply-delicious-food.com/wp-content/uploads/2022/06/Grilled-chicken-burgers2.jpg" alt="grilled chicken burger" width="150px">
+            <figcaption class="name-1" > grilled chicken burger </figcaption>
+        </div>
+        </div>
+<div class="menu"></div>
+
+<div class="text-2">
+    <p>
+        <h2 class="title">Essential ingredients for a good hamburger</h2>
+        Quantity of meat (and quality of that meat)<br>
+        That onion that sweetens but doesn't chop.<br>
+        A fresh, crisp lettuce as if freshly picked from the garden.<br>
+        The best sauce you can make for each version of the burger.<br>
+        A quality, lightly toasted roll that won't break or soften from the heat.</p>
+</div>
+
+
+    <h1>Customize Your Burger</h1>
+    <div id="burger-container">
+        <div id="burger">
+          <div id="top-bun"></div>
+          <div id="fillings"></div>
+          <div id="bottom-bun"></div>
+        </div>
+        </div>
+        <div id="ingredients">
+            <h2>Ingredients:</h2>
+            <label><input type="radio" id="lettuce-radio" name="ingredient">Lettuce</label>
+            <label><input type="radio" id="tomato-radio" name="ingredient">Tomato</label>
+            <label><input type="radio" id="cheese-radio" name="ingredient">Cheese</label>
+            <label><input type="radio" id="bacon-radio" name="ingredient">Bacon</label>
+          </div>
+        
+        
+    
+<form id="burger-form" onsubmit="submitForm(event)">
+    <!-- Bun selection -->
+    <div class="row">
+        <div class="column">
+    <h2>Choose your bun:</h2>
+    <div class="bun" style="color:white;font-size: 18px; ">
+        <label><input type="radio" name="bun" value="30"> regular(₹30)</label><br>
+        <label><input type="radio" name="bun" value="35"> whole wheat(₹35)</label><br>
+        <label><input type="radio" name="bun" value="30"> brioche(₹30)</label><br>
+        <label><input type="radio" name="bun" value="20">lettuce wrap(₹20)</label><br>
+        
+    </div>
+    </div>
+
+    <!-- Protein selection -->
+    <div class="column">
+    <h2>Choose your protein:</h2>
+    <div class="protein" style="color:white; font-size: 18px; ">
+    <label><input type="radio" name="protein" value="30"> beef patty(₹30)</label><br>
+    <label><input type="radio" name="protein" value="35"> chicken breast(₹35)</label><br>
+    <label><input type="radio" name="protein" value="30"> turkey patty(₹30)</label><br>
+    <label><input type="radio" name="protein" value="20">veggie pattty(₹20)</label><br>
+</div>
+</div>
+    <!-- Cheese selection -->
+    <div class="row" >
+    <h2>Choose your cheese:</h2>
+    <div class="cheese" style="color:white; font-size: 18px;margin-top:15px;">
+        <label><input type="radio" name="cheese" value="30"> cheddar(₹30)</label><br>
+        <label><input type="radio" name="cheese" value="35"> swiss(₹35)</label><br>
+        <label><input type="radio" name="cheese" value="30"> pepper jack(₹30)</label><br>
+</div>
+</div>
+</div>
+ 
+
+    <!-- Toppings selection (checkboxes) -->
+    <div class="row">
+        <div class="column">
+    <h2>Choose your toppings:</h2>
+    <div class="toppings" style="color:white; font-size: 18px; ">
+    <label><input type="radio" name="toppings" value="5"> Lettuce(₹5)</label><br>
+    <label><input type="radio" name="toppings" id="tomato-checkbox" value="7"> Tomato(₹7)</label><br>
+    <label><input type="radio" name="toppings" value="6"> Onions(₹6)</label><br>
+    <label><input type="radio" name="toppings" value="4"> Pickles(₹4)</label><br>
+    <label><input type="radio" name="toppings" value="10"> Mushrooms(₹10)</label><br>
+    <label><input type="radio" name="toppings" value="9"> Bacon(₹9)</label><br>
+</div>
+</div>
+
+    <!-- Sauces selection (checkboxes) -->
+    <div class="column">
+    <h2>Choose your sauces:</h2>
+    <div class="sauces" id="sauces" style="color:white;font-size: 18px; ">
+    <label><input type="radio" name="sauces" value="5"> Ketchup(₹5)</label><br>
+    <label><input type="radio" name="sauces" value="7"> Mustard(₹7)</label><br>
+    <label><input type="radio" name="sauces" value="10"> Mayo(₹10)</label><br>
+    <label><input type="radio" name="sauces" value="15"> BBQ Sauce(₹15)</label><br>
+    <label><input type="radio" name="sauces" value="10"> Hot Sauce(₹10)</label><br>
+</div>
+</div>
+    <!-- Extras selection (checkboxes) -->
+    <div class="row">
+    <h2>Choose your extras:</h2>
+    <div class="extras" style="color:white;font-size: 18px; ">
+    <label><input type="radio" name="extra" value="20"> Avocado(₹20)</label><br>
+    <label><input type="radio" name="extra" value="15"> Fried Egg(₹15)</label><br>
+    <label><input type="radio" name="extra" value="20"> Jalapenos(₹20)</label><br>
+    <label><input type="radio" name="extra" value="10"> Onion Rings(₹10)</label><br>
+    </div>
+    </div>
+</div>
+
+   <div>
+        <button> <h3 >Total Price:<span id="total-price">0</span></h3></button> 
+        <button onclick="calculateTotal()"class="button-price">Calculate Total</button>
+    </div>
+</form>
+
+    
+
+ <div>
+   <button class="order"><a>pay now</a></button> 
+ </div> 
+
+<div class="address">
+    <h3> Please contact us</h3> 
+<p><h5>98406 91851/044 43584409</h5><br>
+   <h3>Address</h3><br>No.3/15,1st floor,Jawaharlal Nehru salai,<br>ekkatthuthangai,chennai-600 032<br>
+
+   <h3 style="margin-top:25px;">Timing</h3><br>Opening hours<br>
+ Sunday-11:30AM-10:30PM<br>
+ Monday-11:30AM-9:30PM<br>
+ TuesdaY-11:30AM-9:30PM<br>
+ Wednesday-11:30AM-9:30PM<br>
+ Thursday-11:30AM-9:30PM<br>
+ Friday-11:30AM-9:30PM<br>
+ Saturday-11:30AM-9:30PM<br>
+   </p> 
+   
+   
+</div>
+</div>
+</div>
+</div>
+</nav>
+<script src="burger1.js"></script>
+</body>
+</html>
